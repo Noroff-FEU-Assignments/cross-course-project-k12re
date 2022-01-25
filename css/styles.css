@@ -2,6 +2,7 @@ body {
   font-family: "Roboto", "Oswald", "Montserrat", sans-serif;
   margin: 0px 0px;
   max-width: 440px;
+  min-width: 100%;
 }
 
 nav a {
@@ -131,11 +132,11 @@ input {
   margin: 30px 20px;
   z-index: 1000;
   position: fixed;
-  left: 0.5em;
+  left: 0.1em;
 }
 
 .fa-search {
   z-index: 1000;
   position: fixed;
-  left: 270px;
+  left: 240px;
 }
