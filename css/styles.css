@@ -138,5 +138,5 @@ input {
 .fa-search {
   z-index: 1000;
   position: fixed;
-  left: 240px;
+  left: 6em;
 }
