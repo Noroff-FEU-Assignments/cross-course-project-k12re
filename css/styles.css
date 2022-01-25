@@ -9,9 +9,18 @@ body {
 }
 
 nav {
+  background-color: aliceblue;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
+  position: fixed;
+  padding-top: 10px;
+}
+
+nav li {
+  display: block;
+  display: none;
+  z-index: 1000;
 }
 
 h1 {
@@ -19,8 +28,11 @@ h1 {
   font-weight: 900;
 }
 
+/* Home page -----------*/
+
 .header-news {
   max-width: 400px;
+  padding-top: 80px;
 }
 
 .header-game-big {
@@ -35,7 +47,6 @@ h1 {
 
 .cover-small_img {
   max-width: 100%;
-  display: inline;
 }
 
 .new-game {
@@ -54,4 +65,13 @@ h1 {
 .new-games h2,
 .used-games h2 {
   grid-column: -1/1;
+}
+
+#hamburger-menu,
+#search-bar {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav li {
+  display: block;
 }
