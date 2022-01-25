@@ -1,0 +1,57 @@
+body {
+  font-family: "Roboto", "Oswald", "Montserrat", sans-serif;
+  margin: 0px;
+  max-width: 400px;
+}
+
+.logo {
+  max-width: 60%;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 38px;
+  font-weight: 900;
+}
+
+.header-news {
+  max-width: 400px;
+}
+
+.header-game-big {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.cover-big_img {
+  max-width: 100%;
+}
+
+.cover-small_img {
+  max-width: 100%;
+  display: inline;
+}
+
+.new-game {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  max-width: 30%;
+}
+
+.new-games,
+.used-games {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.new-games h2,
+.used-games h2 {
+  grid-column: -1/1;
+}
