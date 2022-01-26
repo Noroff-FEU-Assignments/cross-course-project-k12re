@@ -1,8 +1,29 @@
 body {
-  font-family: "Roboto", "Oswald", "Montserrat", sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0px 0px;
   max-width: 440px;
   min-width: 100%;
+}
+
+h1 {
+  font-size: 38px;
+  font-weight: 900;
+  padding-top: 10px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 300;
+  padding-left: 3em;
+  padding-right: 3em;
+  color: #ede30e;
+  margin-top: 50px;
+  margin-bottom: 0px;
 }
 
 nav a {
@@ -56,15 +77,22 @@ nav li {
   top: 45px;
 }
 
-h1 {
-  font-size: 38px;
-  font-weight: 900;
+footer {
+  display: flex;
+  min-height: 15vh;
+  background-image: url(/images/footer_img.png);
+  background-size: cover;
+}
+
+footer a {
+  font-weight: 300;
+  position: relative;
 }
 
 /* Home page -----------*/
 
 .header-news {
-  max-width: 400px;
+  max-width: 100%;
   padding: 10px;
 }
 
