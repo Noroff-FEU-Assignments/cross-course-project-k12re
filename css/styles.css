@@ -115,19 +115,6 @@ main {
   padding-bottom: 50px;
 }
 
-footer {
-  min-height: 5vh;
-  min-width: 100%;
-  text-align: center;
-  background-image: url(/images/footer_img.png);
-  background-size: cover;
-}
-
-footer h3 {
-  font-weight: 300;
-  padding-top: 20px;
-}
-
 .current {
   text-decoration: underline;
 }
@@ -221,4 +208,17 @@ input {
   position: fixed;
   right: 0px;
   color: #1d2540;
+}
+
+footer {
+  min-height: 5vh;
+  min-width: 100%;
+  text-align: center;
+  background-image: url(/images/footer_img.png);
+  background-size: cover;
+}
+
+footer h3 {
+  font-weight: 300;
+  padding-top: 20px;
 }
