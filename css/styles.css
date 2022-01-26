@@ -14,6 +14,7 @@ nav a {
 
 .logo {
   padding-top: 10px;
+  padding-bottom: 5px;
   max-width: 40%;
   padding-left: 30%;
   padding-right: 30%;
@@ -64,21 +65,11 @@ h1 {
 
 .header-news {
   max-width: 400px;
-  padding-top: 10px;
+  padding: 10px;
 }
 
 .header-news h1 {
   margin-top: 30%;
-}
-
-.header-game-big {
-  display: flex;
-  flex-direction: column;
-  max-width: 100%;
-}
-
-.header-game_big a {
-  align-items: end;
 }
 
 .cover-big_img {
@@ -99,12 +90,19 @@ h1 {
 .new-games,
 .used-games {
   display: grid;
+  grid-gap: 10px;
   grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
 }
 
 .new-games h2,
 .used-games h2 {
   grid-column: -1/1;
+}
+
+.header-game-big {
+  display: flex;
+  flex-direction: column;
 }
 
 #hamburger-menu,
