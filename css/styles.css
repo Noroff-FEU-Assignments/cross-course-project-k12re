@@ -43,6 +43,15 @@ a {
   text-decoration: none;
 }
 
+.header-news a,
+main a {
+  background-color: #1d2540;
+  color: #ede30e;
+  padding: 5px;
+  border-radius: 4px;
+  text-align: center;
+}
+
 .logo {
   padding-top: 10px;
   padding-bottom: 5px;
@@ -89,7 +98,8 @@ nav li {
 
 footer {
   display: flex;
-  min-height: 15vh;
+  min-height: 12vh;
+  min-width: 100%;
   background-image: url(/images/footer_img.png);
   background-size: cover;
 }
