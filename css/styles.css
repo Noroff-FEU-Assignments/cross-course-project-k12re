@@ -98,7 +98,7 @@ nav li {
 
 footer {
   display: flex;
-  min-height: 12vh;
+  min-height: 10vh;
   min-width: 100%;
   background-image: url(/images/footer_img.png);
   background-size: cover;
