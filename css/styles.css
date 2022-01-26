@@ -7,7 +7,8 @@ body {
 
 h1,
 h2,
-a {
+a,
+p {
   color: #1d2540;
 }
 
@@ -46,10 +47,20 @@ a {
 .header-news a,
 main a {
   background-color: #1d2540;
+  border-color: #ede30e;
+  border-radius: 2px;
   color: #ede30e;
-  padding: 5px;
+  padding: 8px;
   border-radius: 4px;
   text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.header-news a {
+  min-width: 150px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .logo {
@@ -97,16 +108,20 @@ nav li {
 }
 
 footer {
-  display: flex;
-  min-height: 10vh;
+  min-height: 5vh;
   min-width: 100%;
+  text-align: center;
   background-image: url(/images/footer_img.png);
   background-size: cover;
 }
 
 footer h3 {
   font-weight: 300;
-  align-self: center;
+  padding-top: 20px;
+}
+
+.current {
+  text-decoration: underline;
 }
 
 /* Home page -----------*/
