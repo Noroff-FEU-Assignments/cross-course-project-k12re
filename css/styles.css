@@ -3,6 +3,10 @@ body {
   margin: 0px 0px;
   max-width: 440px;
   min-width: 100%;
+  background-image: url(/images/background.png);
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 
 h1,
@@ -107,6 +111,10 @@ nav li {
   top: 45px;
 }
 
+main {
+  padding-bottom: 50px;
+}
+
 footer {
   min-height: 5vh;
   min-width: 100%;
@@ -123,8 +131,6 @@ footer h3 {
 .current {
   text-decoration: underline;
 }
-
-/* Home page -----------*/
 
 .header-news {
   max-width: 100%;
