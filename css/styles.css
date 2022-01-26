@@ -8,27 +8,29 @@ body {
 nav a {
   font-size: 32px;
   text-decoration: none;
-  padding-left: 20px;
+  color: #1d2540;
+  padding-left: 0px;
 }
 
 .logo {
-  padding-top: 5px;
-  max-width: 60%;
+  padding-top: 10px;
+  max-width: 40%;
+  padding-left: 30%;
+  padding-right: 30%;
+  position: fixed;
+  z-index: 1000;
+  background-color: #f2f2f2;
 }
 
 .navigation {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   position: relative;
-  z-index: 900;
+  z-index: 1000;
 }
 
 nav {
-  background-color: #f2f2f2;
   display: flex;
+  flex: 1;
   flex-direction: row;
-  justify-content: space-evenly;
   position: fixed;
   min-height: 110px;
   max-width: 100%;
@@ -37,14 +39,19 @@ nav {
 nav ul {
   padding: 0px;
   position: relative;
-  top: 40px;
-  padding-bottom: 20px;
+  top: 85px;
+  padding-bottom: 0px;
+  padding-right: 200%;
+  min-width: 100%;
+  z-index: 900;
+  background-color: #f2f2f2;
 }
 
 nav li {
   display: none;
   z-index: 1000;
-  padding: 20px 0px;
+  padding: 20px;
+  padding-right: 100%;
   top: 45px;
 }
 
@@ -61,13 +68,17 @@ h1 {
 }
 
 .header-news h1 {
-  margin-top: 5%;
+  margin-top: 30%;
 }
 
 .header-game-big {
   display: flex;
   flex-direction: column;
   max-width: 100%;
+}
+
+.header-game_big a {
+  align-items: end;
 }
 
 .cover-big_img {
@@ -106,11 +117,11 @@ h1 {
 }
 
 input {
-  position: relative;
+  position: fixed;
   top: 20%;
   min-height: 40px;
   min-width: 100%;
-  top: 110px;
+  top: 105px;
   z-index: -1;
   border-width: 3px;
   border-color: #c5d1d9;
@@ -132,11 +143,10 @@ input {
   margin: 30px 20px;
   z-index: 1000;
   position: fixed;
-  left: 0.1em;
 }
 
 .fa-search {
   z-index: 1000;
   position: fixed;
-  left: 6em;
+  right: 0px;
 }
