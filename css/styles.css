@@ -318,16 +318,21 @@ footer h3 {
     margin-top: 10%;
   }
 
-  .header-news: {
+  .header-news {
     grid-area: main;
   }
 
-  .new-games: {
+  .new-games {
     grid-area: new;
-    grid-template-rows: 1fr auto auto;
+    grid-template-rows: auto 1fr auto;
+    padding-top: 100px;
+    padding-bottom: 800px;
   }
 
   .used-games {
     grid-area: used;
+    grid-template-rows: auto 1fr auto;
+    padding-top: 100px;
+    padding-bottom: 800px;
   }
 }
