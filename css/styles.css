@@ -223,7 +223,7 @@ footer h3 {
   padding-top: 20px;
 }
 
-@media only screen and (min-width: 570px) {
+@media only screen and (min-width: 600px) {
   .main {
     max-width: 100%;
     position: center;
@@ -234,7 +234,7 @@ footer h3 {
     z-index: 100;
     max-width: 20vh;
     padding-left: 10px;
-    padding-right: 100%;
+    padding-right: 0px;
   }
 
   .navigation {
