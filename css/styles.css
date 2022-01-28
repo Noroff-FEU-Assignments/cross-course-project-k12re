@@ -325,14 +325,12 @@ footer h3 {
   .new-games {
     grid-area: new;
     grid-template-rows: auto 1fr auto;
-    padding-top: 100px;
-    padding-bottom: 800px;
+    padding: 100px 5px 800px 5px;
   }
 
   .used-games {
     grid-area: used;
     grid-template-rows: auto 1fr auto;
-    padding-top: 100px;
-    padding-bottom: 800px;
+    padding: 100px 5px 800px 5px;
   }
 }
