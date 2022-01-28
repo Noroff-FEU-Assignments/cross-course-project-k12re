@@ -222,3 +222,72 @@ footer h3 {
   font-weight: 300;
   padding-top: 20px;
 }
+
+@media only screen and (min-width: 570px) {
+  .main {
+    max-width: 100%;
+    position: center;
+  }
+
+  .logo {
+    background: none;
+    z-index: 100;
+    max-width: 20vh;
+    padding-left: 10px;
+    padding-right: 100%;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+  }
+
+  nav {
+    display: inline;
+  }
+
+  nav li {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 100%;
+    z-index: 1000;
+  }
+
+  nav ul {
+    display: inline;
+    padding-left: 0px;
+    font-size: 7vh;
+    position: fixed;
+    top: 0vh;
+    left: 25vh;
+    max-width: 100%;
+  }
+
+  li a {
+    font-size: 5vh;
+    position: relative;
+    top: 0px;
+  }
+
+  input {
+    top: 16vh;
+  }
+
+  #hamburger-menu {
+    display: none;
+  }
+
+  .fa-bars {
+    display: none;
+  }
+
+  .fas {
+    font-size: 7vh;
+    margin-top: 4vh;
+  }
+
+  #hamburger-menu:checked ~ nav li {
+    display: inline;
+  }
+}
