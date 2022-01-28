@@ -175,11 +175,11 @@ main {
 }
 
 input {
-  position: fixed;
-  top: 9em;
+  position: relative;
+  top: 20vh;
   min-height: 40px;
   min-width: 100%;
-  z-index: -1;
+  z-index: 1000;
   border-width: 3px;
   border-color: #c5d1d9;
   border-radius: 6px;
@@ -223,14 +223,13 @@ footer h3 {
   padding-top: 20px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 480px) {
   .main {
     max-width: 100%;
     position: center;
   }
 
   .logo {
-    background: none;
     z-index: 100;
     max-width: 20vh;
     padding-left: 10px;
@@ -278,10 +277,6 @@ footer h3 {
     display: none;
   }
 
-  .fa-bars {
-    display: none;
-  }
-
   .fas {
     font-size: 7vh;
     margin-top: 4vh;
@@ -289,5 +284,9 @@ footer h3 {
 
   #hamburger-menu:checked ~ nav li {
     display: inline;
+  }
+
+  .navigation label {
+    display: none;
   }
 }
