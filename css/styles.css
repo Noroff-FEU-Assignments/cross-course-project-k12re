@@ -216,29 +216,6 @@ footer h3 {
   padding-top: 20px;
 }
 
-@media only screen and (min-width: 400px) and (max-width: 599px) {
-  nav ul {
-    display: flex;
-    flex-direction: row;
-    top: 135px;
-  }
-
-  nav li {
-    display: inline;
-    padding-right: 0px;
-    top: auto;
-    justify-content: space-evenly;
-  }
-
-  .header-news h1 {
-    padding-top: 40%;
-  }
-
-  label {
-    display: none;
-  }
-}
-
 @media only screen and (min-width: 600px) {
   .main {
     max-width: 100%;
