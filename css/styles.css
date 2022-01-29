@@ -216,7 +216,30 @@ footer h3 {
   padding-top: 20px;
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 400px) and (max-width: 599px) {
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    top: 135px;
+  }
+
+  nav li {
+    display: inline;
+    padding-right: 0px;
+    top: auto;
+    justify-content: space-evenly;
+  }
+
+  .header-news h1 {
+    padding-top: 40%;
+  }
+
+  label {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 600px) {
   .main {
     max-width: 100%;
     position: center;
@@ -225,7 +248,7 @@ footer h3 {
 
   .logo {
     z-index: 100;
-    max-width: 20vh;
+    max-width: 18vh;
     padding-left: 10px;
     padding-right: 100%;
     padding-top: 10px;
@@ -255,15 +278,13 @@ footer h3 {
     padding-left: 0px;
     font-size: 2vh;
     position: fixed;
-    top: 6vh;
-    left: 25vh;
+    top: 8vh;
+    left: 20vh;
     max-width: 100%;
-    justify-content: space-between;
-    text-overflow: clip;
   }
 
   li a {
-    font-size: 3vh;
+    font-size: 1.2em;
     position: relative;
     top: 0px;
   }
@@ -309,7 +330,7 @@ footer h3 {
   }
 }
 
-@media only screen and (min-width: 800px) and (orientation: landscape) {
+@media only screen and (min-width: 900px) and (orientation: landscape) {
   main {
     padding: 60px;
     display: flex;
@@ -319,7 +340,7 @@ footer h3 {
 
   main a,
   main p {
-    font-size: 2em;
+    font-size: 1.5em;
   }
 
   .header-news h1 {
