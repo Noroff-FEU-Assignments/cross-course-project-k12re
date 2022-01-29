@@ -216,7 +216,7 @@ footer h3 {
   padding-top: 20px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 400px) {
   .main {
     max-width: 100%;
     position: center;
@@ -255,10 +255,11 @@ footer h3 {
     padding-left: 0px;
     font-size: 2vh;
     position: fixed;
-    top: 8vh;
+    top: 4vh;
     left: 25vh;
     max-width: 100%;
     justify-content: space-between;
+    text-overflow: clip;
   }
 
   li a {
