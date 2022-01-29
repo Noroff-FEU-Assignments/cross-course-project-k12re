@@ -312,9 +312,6 @@ footer h3 {
   main {
     padding: 60px;
     display: flex;
-    /*grid-template-areas:
-      "main new"
-      "main used";*/
   }
 
   .header-news h1 {
@@ -322,14 +319,14 @@ footer h3 {
   }
 
   .header-news {
-    /*grid-area: main;*/
     flex: 1fr;
     min-width: 40%;
     padding: 60px 0px;
   }
 
-  .header-game_big {
-    /*  size-adjust: 50%;*/
+  .header-game_big h2,
+  .header-game_big p {
+    color: #ede30e;
   }
 
   .games {
@@ -339,16 +336,12 @@ footer h3 {
   .new-games {
     flex-direction: column;
     flex: auto;
-    /*grid-area: new;
-    grid-template-rows: auto 1fr auto;
-    padding: 100px 5px 800px 5px;*/
+    padding-bottom: 0px;
   }
 
   .used-games {
     flex-direction: column;
     flex: auto;
-    /*grid-area: used;
-    grid-template-rows: auto 1fr auto;
-    padding: 100px 5px 800px 5px;*/
+    padding-top: 0px;
   }
 }
