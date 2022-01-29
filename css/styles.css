@@ -313,6 +313,12 @@ footer h3 {
     padding: 60px;
     display: flex;
     max-width: 100%;
+    align-self: center;
+  }
+
+  main a,
+  main p {
+    font-size: 2em;
   }
 
   .header-news h1 {
@@ -322,27 +328,32 @@ footer h3 {
   .header-news {
     flex: 1fr;
     min-width: 40%;
-    padding: 60px 0px;
+    padding: 60px 40px;
+  }
+
+  .header-game_big {
+    background-color: #f2f2f2;
   }
 
   .header-game_big h2,
   .header-game_big p {
-    color: #ede30e;
+    padding-left: 1em;
   }
 
   .games {
-    padding-top: 60px;
+    padding-top: 100px;
+    max-width: 50%;
   }
 
   .new-games {
     flex-direction: column;
     flex: auto;
-    padding-bottom: 0px;
+    padding-bottom: 60px;
   }
 
   .used-games {
     flex-direction: column;
     flex: auto;
-    padding-top: 0px;
+    padding-top: 60px;
   }
 }
