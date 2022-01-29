@@ -169,7 +169,7 @@ main {
 
 input {
   position: fixed;
-  top: 12vh;
+  top: 13vh;
   min-height: 40px;
   min-width: 100%;
   z-index: 1000;
