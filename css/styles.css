@@ -312,6 +312,7 @@ footer h3 {
   main {
     padding: 60px;
     display: flex;
+    max-width: 100%;
   }
 
   .header-news h1 {
