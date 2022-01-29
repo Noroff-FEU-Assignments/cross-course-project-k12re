@@ -216,7 +216,7 @@ footer h3 {
   padding-top: 20px;
 }
 
-@media only screen and (min-width: 580px) {
+@media only screen and (min-width: 600px) {
   .main {
     max-width: 100%;
     position: center;
@@ -253,11 +253,12 @@ footer h3 {
   nav ul {
     display: inline;
     padding-left: 0px;
-    font-size: 7vh;
+    font-size: 2vh;
     position: fixed;
-    top: 0vh;
+    top: 8vh;
     left: 25vh;
     max-width: 100%;
+    justify-content: space-between;
   }
 
   li a {
@@ -310,8 +311,10 @@ footer h3 {
 @media only screen and (min-width: 800px) and (orientation: landscape) {
   main {
     padding: 60px;
-    display: grid;
-    grid-template-areas: "main new used";
+    display: flex;
+    /*grid-template-areas:
+      "main new"
+      "main used";*/
   }
 
   .header-news h1 {
@@ -319,18 +322,33 @@ footer h3 {
   }
 
   .header-news {
-    grid-area: main;
+    /*grid-area: main;*/
+    flex: 1fr;
+    min-width: 40%;
+    padding: 60px 0px;
+  }
+
+  .header-game_big {
+    /*  size-adjust: 50%;*/
+  }
+
+  .games {
+    padding-top: 60px;
   }
 
   .new-games {
-    grid-area: new;
+    flex-direction: column;
+    flex: auto;
+    /*grid-area: new;
     grid-template-rows: auto 1fr auto;
-    padding: 100px 5px 800px 5px;
+    padding: 100px 5px 800px 5px;*/
   }
 
   .used-games {
-    grid-area: used;
+    flex-direction: column;
+    flex: auto;
+    /*grid-area: used;
     grid-template-rows: auto 1fr auto;
-    padding: 100px 5px 800px 5px;
+    padding: 100px 5px 800px 5px;*/
   }
 }
