@@ -216,7 +216,7 @@ footer h3 {
   padding-top: 20px;
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 480px) {
   .main {
     max-width: 100%;
     position: center;
