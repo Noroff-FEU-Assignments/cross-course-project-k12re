@@ -32,7 +32,7 @@ h3 {
   font-weight: 300;
   padding-left: 3em;
   padding-right: 3em;
-  color: #ede30e;
+  color: #1d2540;
   margin-top: 50px;
   margin-bottom: 0px;
 }
@@ -225,7 +225,7 @@ footer h3 {
 }
 
 footer a {
-  color: #ede30e;
+  color: #1d2540;
   bottom: 10px;
 }
 
@@ -284,6 +284,7 @@ main h1 {
   margin: 0px 37px;
   padding: 27px;
   border-radius: 12px;
+  margin-bottom: 160px;
 }
 
 .contact-map p {
