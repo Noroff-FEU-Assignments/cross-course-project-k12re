@@ -37,6 +37,10 @@ h3 {
   margin-bottom: 0px;
 }
 
+input {
+  min-height: 40px;
+}
+
 nav a {
   font-size: 32px;
   text-decoration: none;
@@ -75,6 +79,10 @@ main a {
   padding-right: 30%;
   position: fixed;
   background-color: #f2f2f2;
+}
+
+.navigation {
+  display: flex;
 }
 
 nav {
@@ -167,7 +175,7 @@ main {
   display: none;
 }
 
-input {
+header input {
   position: fixed;
   top: 13vh;
   min-height: 40px;
@@ -214,6 +222,72 @@ footer {
 footer h3 {
   font-weight: 300;
   padding-top: 20px;
+}
+
+footer a {
+  color: #ede30e;
+  bottom: 10px;
+}
+
+/* Contact ---------- */
+
+main h1 {
+  padding-top: 30%;
+  padding-left: 37px;
+}
+
+.header-contact {
+  top: 140px;
+  display: flex;
+  max-width: 100%;
+}
+
+.header-contact h1 {
+  width: 100%;
+}
+
+.contact p {
+  margin: 30px 10px 10px 37px;
+}
+
+.contact-form {
+  background-color: #ede30e;
+  flex-direction: column;
+  max-width: 100%;
+  padding: 27px;
+  border-radius: 12px;
+  margin: 0px 37px;
+}
+
+.contact-form textarea {
+  min-height: 221px;
+  min-width: 100%;
+  border-radius: 5px;
+  border: 1px solid #1d2540;
+}
+
+.contact-form input {
+  min-width: 100%;
+  border-radius: 5px;
+  border: 1px solid #1d2540;
+}
+
+.cta {
+  background-color: #1d2540;
+  color: #ede30e;
+  border: 2px solid #ede30e;
+}
+
+.contact-map {
+  background-color: #ede30e;
+  max-width: 100%;
+  margin: 0px 37px;
+  padding: 27px;
+  border-radius: 12px;
+}
+
+.contact-map p {
+  margin-left: 0px;
 }
 
 @media only screen and (min-width: 480px) {
