@@ -229,9 +229,34 @@ footer a {
   bottom: 10px;
 }
 
+/* Account ----------*/
+
+.account-info h1 {
+  padding-top: 30%;
+  padding-left: 37px;
+}
+
+.stats {
+  display: grid;
+  background-image: url(/images/controller_img.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: -320px;
+  min-height: 465px;
+  max-width: 100%;
+  margin: 37px;
+  border-radius: 12px;
+}
+
+.stats-list {
+  grid-column: 2;
+  text-align: left;
+  text-decoration: underline;
+}
+
 /* Contact ---------- */
 
-main h1 {
+.contact h1 {
   padding-top: 30%;
   padding-left: 37px;
 }
@@ -254,13 +279,14 @@ main h1 {
   background-color: #ede30e;
   flex-direction: column;
   max-width: 100%;
+  min-height: 465px;
   padding: 27px;
   border-radius: 12px;
   margin: 0px 37px;
 }
 
 .contact-form textarea {
-  min-height: 221px;
+  min-height: 320px;
   min-width: 100%;
   border-radius: 5px;
   border: 1px solid #1d2540;
@@ -360,10 +386,6 @@ main h1 {
 
   .navigation label {
     display: none;
-  }
-
-  .header-news h1 {
-    margin-top: 20%;
   }
 
   .header-news,
