@@ -122,7 +122,7 @@ main {
 
 .header-news {
   max-width: 100%;
-  padding: 10px;
+  padding: 37px;
 }
 
 .header-news h1 {
@@ -149,7 +149,7 @@ main {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(3, 1fr);
-  padding: 10px;
+  padding: 37px;
 }
 
 .new-games h2,
