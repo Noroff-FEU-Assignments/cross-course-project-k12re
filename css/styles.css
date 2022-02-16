@@ -254,6 +254,20 @@ footer a {
   text-decoration: underline;
 }
 
+.my-games-overview {
+  padding: 37px;
+  max-width: 100%;
+}
+
+.my-games {
+  display: flex;
+}
+
+.my-games a {
+  min-height: 150px;
+  max-width: 100%;
+}
+
 /* Contact ---------- */
 
 .contact h1 {
