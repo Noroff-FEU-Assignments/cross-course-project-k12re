@@ -256,6 +256,24 @@ footer a {
   grid-area: auto;
 }
 
+/* Gamepage/Play ----------*/
+
+.game-page h1 {
+  padding-top: 30%;
+  padding-left: 37px;
+}
+
+.screenshots {
+  display: grid;
+  padding: 37px;
+  gap: 10px;
+}
+
+.thumbnail {
+  grid-column: 1;
+  max-width: 100%;
+}
+
 /* Account ----------*/
 
 .account-info h1 {
