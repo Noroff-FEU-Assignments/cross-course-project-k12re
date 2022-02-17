@@ -229,6 +229,33 @@ footer a {
   bottom: 10px;
 }
 
+/* Games ----------*/
+
+.games-list h1 {
+  padding-top: 30%;
+  padding-left: 37px;
+}
+
+.game-card {
+  display: grid;
+  padding: 37px;
+}
+
+.game {
+  max-width: 100%;
+  grid-column: 2;
+  grid-row: 1;
+  grid-column-start: auto;
+}
+
+.game-card h2 {
+  grid-area: 2;
+}
+
+.game-card a {
+  grid-area: auto;
+}
+
 /* Account ----------*/
 
 .account-info h1 {
