@@ -39,6 +39,7 @@ h3 {
 
 input {
   min-height: 40px;
+  font-size: 1.2em;
 }
 
 nav a {
@@ -303,17 +304,51 @@ footer a {
 
 /* Checkout ----------*/
 
+.checkout h1 {
+  padding-top: 30%;
+  padding-left: 37px;
+}
+
 .checkout-game-card {
-  /*max-width: 100px;*/
-  /*margin: 0px 37px;*/
   max-width: 100%;
   display: grid;
   padding: 37px;
+  gap: 10px;
+}
+
+.checkout-game-card p {
+  padding: 10px;
 }
 
 .checkout-game {
   max-width: 100px;
-  grid-column: 1;
+}
+
+.price {
+  background-color: #ede30e;
+  color: #1d2540;
+  grid-column: 2;
+  border-radius: 24px;
+  text-align: end;
+}
+
+/*Success ----------*/
+
+.success h2 {
+  padding-top: 20%;
+}
+
+.success p {
+  padding: 20px 0px;
+}
+
+.success {
+  min-height: 465px;
+  margin: 50% auto;
+  text-align: center;
+  background-color: #ede30e;
+  padding: 37px;
+  max-width: 100%;
 }
 
 /* Account ----------*/
@@ -396,18 +431,20 @@ footer a {
   min-width: 100%;
   border-radius: 5px;
   border: 1px solid #1d2540;
+  margin: 10px 0px;
 }
 
 .contact-form input {
   min-width: 100%;
   border-radius: 5px;
   border: 1px solid #1d2540;
+  margin: 10px 0px;
 }
 
 .cta {
   background-color: #1d2540;
   color: #ede30e;
-  border: 2px solid #ede30e;
+  border-radius: 5px;
 }
 
 .contact-map {
