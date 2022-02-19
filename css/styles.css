@@ -235,11 +235,22 @@ footer a {
 .games-list h1 {
   padding-top: 30%;
   padding-left: 37px;
+  display: flex;
+  width: 100%;
+}
+
+.games-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .game-card {
+  max-width: 250px;
+  margin: 0px auto;
   display: grid;
   padding: 37px;
+  grid-column: 3;
 }
 
 .game {
@@ -255,6 +266,23 @@ footer a {
 
 .game-card a {
   grid-area: auto;
+}
+
+.tags ul {
+  padding: 0px 37px;
+  text-align: center;
+}
+
+.tags li {
+  display: inline;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 2px 12px;
+  width: 100%;
+  background-color: #ede30e;
+  border-color: #1d2540;
+  border-radius: 12px;
+  margin-top: 5px;
 }
 
 /* Gamepage/Play ----------*/
