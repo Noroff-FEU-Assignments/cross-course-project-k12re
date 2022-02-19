@@ -162,8 +162,7 @@ main {
 }
 
 .header-game-big {
-  display: flex;
-  flex-direction: column;
+  display: grid;
 }
 
 #hamburger-menu,
@@ -246,7 +245,7 @@ footer a {
 }
 
 .game-card {
-  max-width: 250px;
+  max-width: 300px;
   margin: 0px auto;
   display: grid;
   padding: 37px;
@@ -299,7 +298,6 @@ footer a {
 }
 
 .thumbnail {
-  grid-column: 1;
   max-width: 100%;
 }
 
@@ -335,6 +333,11 @@ footer a {
 
 .my-games {
   display: flex;
+}
+
+.my-games img {
+  max-width: 30%;
+  margin: 0px auto;
 }
 
 .my-games a {
