@@ -301,6 +301,21 @@ footer a {
   max-width: 100%;
 }
 
+/* Checkout ----------*/
+
+.checkout-game-card {
+  /*max-width: 100px;*/
+  /*margin: 0px 37px;*/
+  max-width: 100%;
+  display: grid;
+  padding: 37px;
+}
+
+.checkout-game {
+  max-width: 100px;
+  grid-column: 1;
+}
+
 /* Account ----------*/
 
 .account-info h1 {
