@@ -225,9 +225,11 @@ footer h3 {
   padding-top: 20px;
 }
 
-footer a {
+footer a,
+.no-account a {
   color: #1d2540;
   bottom: 10px;
+  background: none;
 }
 
 /* Games ----------*/
@@ -468,6 +470,17 @@ footer a {
   display: flex;
   flex-direction: row-reverse;
   max-width: 20px;
+}
+
+.no-account {
+  display: flex;
+  background: none;
+}
+
+.no-account p,
+.no-account a {
+  padding: 0px;
+  display: flex;
 }
 
 /* Media queries -----------*/
