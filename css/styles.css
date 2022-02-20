@@ -471,6 +471,8 @@ footer a,
   display: flex;
   flex-direction: row;
   margin-left: -42%;
+  background: none;
+  border-color: #1d2540;
 }
 
 #checkbox-label {
