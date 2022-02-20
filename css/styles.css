@@ -246,7 +246,7 @@ footer a {
 }
 
 .game-card {
-  max-width: 300px;
+  max-width: 320px;
   margin: 0px auto;
   display: grid;
   padding: 37px;
@@ -295,6 +295,8 @@ footer a {
 .screenshots {
   display: grid;
   padding: 37px;
+  max-width: 320px;
+  margin: 0px auto;
   gap: 10px;
 }
 
@@ -459,6 +461,16 @@ footer a {
 .contact-map p {
   margin-left: 0px;
 }
+
+/* Sign in ----------*/
+
+#checkbox {
+  display: flex;
+  flex-direction: row-reverse;
+  max-width: 20px;
+}
+
+/* Media queries -----------*/
 
 @media only screen and (min-width: 480px) {
   .main {
