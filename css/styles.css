@@ -416,7 +416,8 @@ footer a,
   width: 100%;
 }
 
-.contact p {
+.contact p,
+.contact a {
   margin: 30px 10px 10px 37px;
 }
 
@@ -468,13 +469,21 @@ footer a,
 
 #checkbox {
   display: flex;
-  flex-direction: row-reverse;
-  max-width: 20px;
+  flex-direction: row;
+  margin-left: -42%;
+}
+
+#checkbox-label {
+  display: flex;
+  flex-direction: row;
+  margin-top: -30px;
+  margin-left: 18%;
 }
 
 .no-account {
   display: flex;
   background: none;
+  align-items: flex-start;
 }
 
 .no-account p,
