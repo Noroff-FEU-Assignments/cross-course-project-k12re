@@ -632,6 +632,7 @@ footer a,
   .main .game-card {
     background-color: #f2f2f2;
     padding: 0px;
+    justify-content: space-between;
   }
 
   .header-news h1 {
