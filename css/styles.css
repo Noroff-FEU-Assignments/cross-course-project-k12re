@@ -579,7 +579,7 @@ footer a,
   .game-card {
     display: flex;
     flex-direction: column;
-    min-width: 400px;
+    min-width: 260px;
   }
 
   .game-page {
