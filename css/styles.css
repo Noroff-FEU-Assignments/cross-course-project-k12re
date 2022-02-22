@@ -248,7 +248,7 @@ footer a,
 }
 
 .game-card {
-  max-width: 320px;
+  max-width: 260px;
   margin: 0px auto;
   display: grid;
   padding: 37px;
@@ -501,6 +501,8 @@ footer a,
     max-width: 100%;
     position: center;
     padding: 60px;
+    display: flex;
+    flex-direction: column;
   }
 
   .logo {
@@ -573,13 +575,47 @@ footer a,
     padding: 60px;
   }
 
-  .header-game_big {
+  .header-game_big,
+  .game-card {
     display: flex;
     flex-direction: column;
+    min-width: 400px;
+  }
+
+  .game-card a {
+    justify-items: auto;
+  }
+
+  .game-page {
+    display: grid;
+    margin: 0px auto;
+  }
+
+  .game-page h1 {
+    width: 100%;
+    grid-area: -1;
+  }
+
+  .game-card,
+  .screenshots {
+    grid-area: 2;
+  }
+
+  .tags {
+    grid-area: 3;
   }
 
   footer h3 {
     padding-bottom: 20px;
+  }
+
+  .success {
+    margin: 20% auto;
+  }
+
+  .account-info h1,
+  .contact h1 {
+    padding-top: 20%;
   }
 }
 
@@ -587,6 +623,7 @@ footer a,
   main {
     padding: 60px;
     display: flex;
+    flex-direction: column;
     max-width: 100%;
     align-self: center;
   }
@@ -594,6 +631,12 @@ footer a,
   main a,
   main p {
     font-size: 1.5em;
+  }
+
+  .main .game-card {
+    background-color: #f2f2f2;
+    padding: 0px;
+    justify-content: space-between;
   }
 
   .header-news h1 {
@@ -626,9 +669,41 @@ footer a,
     padding-bottom: 60px;
   }
 
+  .game-page .game-card {
+    min-width: 400px;
+  }
+
+  .game-card {
+    min-width: 260px;
+  }
+
   .used-games {
     flex-direction: column;
     flex: auto;
     padding-top: 60px;
+  }
+
+  .checkout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .account-info h1,
+  .contact h1,
+  .games-list h1 {
+    padding-top: 10%;
+  }
+
+  .game-page h1 {
+    padding-top: 20%;
+  }
+
+  .contact {
+    max-width: 700px;
+    margin: 0px auto;
+  }
+
+  .main {
+    flex-direction: row;
   }
 }
