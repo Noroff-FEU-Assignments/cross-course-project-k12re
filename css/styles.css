@@ -582,10 +582,6 @@ footer a,
     min-width: 400px;
   }
 
-  .game-card a {
-    justify-items: auto;
-  }
-
   .game-page {
     display: grid;
     margin: 0px auto;
