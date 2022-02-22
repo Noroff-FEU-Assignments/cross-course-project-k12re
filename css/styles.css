@@ -592,8 +592,7 @@ footer a,
     grid-area: -1;
   }
 
-  .game-card,
-  .screenshots {
+  .game-card {
     grid-area: 2;
   }
 
@@ -671,6 +670,10 @@ footer a,
 
   .game-card {
     min-width: 260px;
+  }
+
+  .screenshots {
+    grid-area: 2;
   }
 
   .used-games {
