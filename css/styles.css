@@ -362,22 +362,27 @@ footer a,
   padding-left: 37px;
 }
 
+.account-info {
+  max-width: 700px;
+}
+
 .stats {
   display: grid;
   background-image: url(/images/controller_img.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: -320px;
+  background-position: -300px;
   min-height: 465px;
   max-width: 100%;
   margin: 37px;
   border-radius: 12px;
+  text-indent: 20px;
 }
 
 .stats-list {
   grid-column: 2;
   text-align: left;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .my-games-overview {
@@ -397,6 +402,19 @@ footer a,
 .my-games a {
   min-height: 150px;
   max-width: 100%;
+}
+
+hr {
+  border-color: #1d2540;
+  margin: 10px 20px;
+}
+
+.stats p {
+  font-weight: bold;
+}
+
+ul {
+  list-style: none;
 }
 
 /* Contact ---------- */
@@ -611,6 +629,13 @@ footer a,
   .account-info h1,
   .contact h1 {
     padding-top: 20%;
+  }
+
+  .stats {
+    background-size: auto;
+    background-position: -370px;
+    text-align: left;
+    text-indent: 20px;
   }
 }
 
