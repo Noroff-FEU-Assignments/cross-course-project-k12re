@@ -736,7 +736,7 @@ ul {
   .cta,
   a {
     transition-property: background;
-    transition-duration: 1s;
+    transition-duration: 0.1s;
   }
 
   .cta:hover,
