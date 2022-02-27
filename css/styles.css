@@ -287,6 +287,14 @@ footer a,
   margin-top: 5px;
 }
 
+.cta:active,
+a:active {
+  background: #ede30e;
+  color: #1d2540;
+  border-width: 3px;
+  border-color: #1d2540;
+}
+
 /* Gamepage/Play ----------*/
 
 .game-page h1 {
