@@ -732,4 +732,18 @@ ul {
   .main {
     flex-direction: row;
   }
+
+  .cta,
+  a {
+    transition-property: background;
+    transition-duration: 1s;
+  }
+
+  .cta:hover,
+  a:hover {
+    background: #ede30e;
+    color: #1d2540;
+    border-width: 3px;
+    border-color: #1d2540;
+  }
 }
