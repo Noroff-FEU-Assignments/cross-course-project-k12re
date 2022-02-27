@@ -505,20 +505,26 @@ ul {
 #checkbox-label {
   display: flex;
   flex-direction: row;
-  margin-top: -30px;
   margin-left: 18%;
 }
 
 .no-account {
   display: flex;
   background: none;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .no-account p,
 .no-account a {
   padding: 0px;
   display: flex;
+}
+
+.remember {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* Media queries -----------*/
