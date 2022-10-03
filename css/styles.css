@@ -316,13 +316,17 @@ a:active {
 
 /* Checkout ----------*/
 
+.expiry, .cvc {
+  max-width: 20%;
+}
+
 .checkout h1 {
   padding-top: 30%;
   padding-left: 37px;
 }
 
 .checkout-game-card {
-  max-width: 100%;
+  max-width: 50%;
   display: grid;
   padding: 37px;
   gap: 10px;
@@ -333,11 +337,11 @@ a:active {
 }
 
 .checkout-game {
-  max-width: 100px;
+  max-width: 120px;
 }
 
 .price {
-  background-color: #ede30e;
+  /*background-color: #ede30e;*/
   color: #1d2540;
   grid-column: 2;
   border-radius: 24px;
@@ -427,6 +431,11 @@ ul {
 }
 
 /* Contact ---------- */
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+
 
 .contact h1 {
   padding-top: 30%;
@@ -467,16 +476,18 @@ ul {
 }
 
 .contact-form input {
-  min-width: 100%;
   border-radius: 5px;
   border: 1px solid #1d2540;
   margin: 10px 0px;
 }
 
+
 .cta {
   background-color: #1d2540;
   color: #ede30e;
   border-radius: 5px;
+  min-width: 100%;
+  
 }
 
 .contact-map {
@@ -527,9 +538,24 @@ ul {
   align-items: center;
 }
 
+.contact .req {
+  color: red;
+  margin: 0%;
+  padding-bottom: 4%;
+  display: none;
+}
+
+.contact .error {
+  color: red;
+}
+
+.contact .prompt {
+  color: green;
+}
+
 /* Media queries -----------*/
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 600px) {
   .main {
     max-width: 100%;
     position: center;
@@ -583,6 +609,10 @@ ul {
 
   input {
     top: 16vh;
+  }
+
+  .cta {
+    min-width: 25%;
   }
 
   #hamburger-menu {

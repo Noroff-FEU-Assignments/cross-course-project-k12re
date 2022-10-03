@@ -45,12 +45,15 @@
     <main class="contact">
       <h1>Contact Us</h1>
       <p>Please fill out form...</p>
+      <div class="prompt"></div>
       <section class="contact">
-        <form method="POST" class="contact-form">
-          <label for="email">Email</label>
-          <input type="email" />
-          <label for="textarea">Message</label>
-          <textarea label="Message"></textarea>
+        <form class="contact-form">
+          <label for="email">Email (Required)</label>
+          <input class="email" type="email" />
+          <div class="req" id="email-req">Must be a valid email</div>
+          <label for="textarea">Message (Required)</label>
+          <textarea class="textarea" label="Message"></textarea>
+          <div class="req" id="textarea-req">Minimum 25 characters</div>
           <input type="submit" class="cta" />
         </form>
       </section>
@@ -74,5 +77,6 @@
         <h3>&copy; Ken Thore Bøeng</h3>
         <a href="contact.html"> Contact Us </a>
       </footer>
+      <script src="js/scripts.js"></script>
   </body>
 </html>
