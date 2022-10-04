@@ -510,7 +510,7 @@ ul {
   margin-left: 37px;
 }
 
-.contact .req {
+.contact .req, .contact-area .req {
   color: red;
   margin: 0%;
   padding-bottom: 4%;
@@ -564,7 +564,7 @@ ul {
 
 /* Media queries -----------*/
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 500px) {
   .main {
     max-width: 100%;
     position: center;
@@ -696,7 +696,7 @@ ul {
   
 }
 
-@media only screen and (min-width: 900px) and (orientation: landscape) {
+@media only screen and (min-width: 800px) {
   main {
     padding: 60px;
     display: flex;
