@@ -6,11 +6,7 @@ const emailReq = document.querySelector("#email-req");
 const prompt = document.querySelector(".prompt");
 
 
-function checkMail(email) {
-    const regEx = /\S+@\S+\.\S+/;
-    const mailPattern = regEx.test(email);
-    return mailPattern;
-};
+
 
 function validateForm() {
 
@@ -32,15 +28,27 @@ function validateForm() {
     console.log(email.value);
 };
 
+
+function checkMail(email) {
+
+    const regEx = /\S+@\S+\.\S+/;
+    const mailPattern = regEx.test(email);
+    return mailPattern;
+};
+
+
 function submit(event) {
 
-    if(checkInputs(textArea.value.length, 25) && checkInputs(email.value, true)) {
-        prompt.innerHTML = `<div class="prompt">Submission success</div>`;
+    event.preventDefault();
+
+    if(checkInputs(textArea.value, 25) && checkInputs(email.value, true)) {
+        prompt.innerHTML = `<div class="successMsg">Submission success</div>`;
         contactForm.reset();
     } else {
-        prompt.innerHTML = `<div class="error">Please insert valid info</div>`;
+        prompt.innerHTML = `<div class="errorMsg">Please insert valid info</div>`;
     };
 }
+
 
 function checkInputs(value, length) {
 

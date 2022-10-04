@@ -326,7 +326,8 @@ a:active {
 }
 
 .checkout-game-card {
-  max-width: 50%;
+  min-width: 50%;
+  max-width: 80%;
   display: grid;
   padding: 37px;
   gap: 10px;
@@ -383,7 +384,8 @@ a:active {
   background-image: url(/images/controller_img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: -300px;
+  background-position: -360px;
+  background-color: #ffe002;
   min-height: 465px;
   max-width: 100%;
   margin: 37px;
@@ -434,8 +436,8 @@ ul {
 .contact {
   display: flex;
   flex-direction: column;
+  
 }
-
 
 .contact h1 {
   padding-top: 30%;
@@ -459,6 +461,7 @@ ul {
 
 .contact-form {
   background-color: #ede30e;
+  display: flex;
   flex-direction: column;
   max-width: 100%;
   min-height: 465px;
@@ -469,7 +472,7 @@ ul {
 
 .contact-form textarea {
   min-height: 320px;
-  min-width: 100%;
+  /*min-width: 100%;*/
   border-radius: 5px;
   border: 1px solid #1d2540;
   margin: 10px 0px;
@@ -501,6 +504,25 @@ ul {
 
 .contact-map p {
   margin-left: 0px;
+}
+
+.prompt {
+  margin-left: 37px;
+}
+
+.contact .req {
+  color: red;
+  margin: 0%;
+  padding-bottom: 4%;
+  display: none;
+}
+
+.contact .errorMsg {
+  color: red;
+}
+
+.contact .successMsg {
+  color: green;
 }
 
 /* Sign in ----------*/
@@ -538,20 +560,7 @@ ul {
   align-items: center;
 }
 
-.contact .req {
-  color: red;
-  margin: 0%;
-  padding-bottom: 4%;
-  display: none;
-}
 
-.contact .error {
-  color: red;
-}
-
-.contact .prompt {
-  color: green;
-}
 
 /* Media queries -----------*/
 
@@ -612,7 +621,9 @@ ul {
   }
 
   .cta {
-    min-width: 25%;
+    min-width: 30%;
+    max-width: 31%;
+    align-self: flex-end;
   }
 
   #hamburger-menu {
@@ -678,10 +689,11 @@ ul {
 
   .stats {
     background-size: auto;
-    background-position: -370px;
+    background-position: -520px;
     text-align: left;
     text-indent: 20px;
   }
+  
 }
 
 @media only screen and (min-width: 900px) and (orientation: landscape) {
@@ -769,8 +781,10 @@ ul {
 
   .contact,
   .checkout {
-    max-width: 700px;
+    min-width: 60%;
+    max-width: 65%;
     margin: 0px auto;
+    /*max-width: 700px;*/
   }
 
   .main {
