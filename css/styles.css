@@ -623,6 +623,7 @@ ul {
   .cta {
     min-width: 30%;
     max-width: 31%;
+    min-height: 40px;
     align-self: flex-end;
   }
 
