@@ -46,18 +46,19 @@
     <main class="contact">
         <h1>Sign in</h1>
         <p>Please fill in login info...</p>
+        <div class="prompt"></div>
         <section class="contact-area">
           <form action="index.html" method="GET" class="contact-form">
             <label for="email">Email</label>
-            <input type="email" />
+            <input class="email" type="email" />
             <div class="req" id="email-req">Must be a valid email</div>
             <label for="password">Password</label>
-            <input type="password"></textarea>
+            <input class="password" type="password">
             <div class="req" id="password-req">Must be minimum 8 characters</div>
             <div class="remember">
               <input type="checkbox" id="checkbox">
               <label for="checkbox" id="checkbox-label">Remember me</label>
-             </div>
+            </div>
             <input type="submit" value="Sign in" class="cta"/>
             <div class="no-account">
               <p>Don't have an account?</p>

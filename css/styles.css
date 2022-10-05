@@ -795,7 +795,7 @@ ul {
   .contact,
   .checkout {
     min-width: 60%;
-    /*max-width: 65%;*/
+    max-width: 65%;
     margin: 0px auto;
     /*max-width: 700px;*/
   }
