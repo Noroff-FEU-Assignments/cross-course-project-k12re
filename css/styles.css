@@ -234,6 +234,14 @@ footer a,
 
 /* Games ----------*/
 
+.clickable {
+  background-color: white;
+}
+
+.clickable:hover {
+  background-color: #f2f2f2;
+}
+
 .games-list h1 {
   padding-top: 30%;
   padding-left: 37px;
@@ -316,13 +324,18 @@ a:active {
 
 /* Checkout ----------*/
 
+.expiry, .cvc {
+  max-width: 20%;
+}
+
 .checkout h1 {
   padding-top: 30%;
   padding-left: 37px;
 }
 
 .checkout-game-card {
-  max-width: 100%;
+  min-width: 50%;
+  max-width: 80%;
   display: grid;
   padding: 37px;
   gap: 10px;
@@ -333,11 +346,11 @@ a:active {
 }
 
 .checkout-game {
-  max-width: 100px;
+  max-width: 120px;
 }
 
 .price {
-  background-color: #ede30e;
+  /*background-color: #ede30e;*/
   color: #1d2540;
   grid-column: 2;
   border-radius: 24px;
@@ -379,7 +392,8 @@ a:active {
   background-image: url(/images/controller_img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: -300px;
+  background-position: -360px;
+  background-color: #ffe002;
   min-height: 465px;
   max-width: 100%;
   margin: 37px;
@@ -427,6 +441,11 @@ ul {
 }
 
 /* Contact ---------- */
+.contact {
+  display: flex;
+  flex-direction: column;
+  
+}
 
 .contact h1 {
   padding-top: 30%;
@@ -450,6 +469,7 @@ ul {
 
 .contact-form {
   background-color: #ede30e;
+  display: flex;
   flex-direction: column;
   max-width: 100%;
   min-height: 465px;
@@ -460,23 +480,25 @@ ul {
 
 .contact-form textarea {
   min-height: 320px;
-  min-width: 100%;
+  /*min-width: 100%;*/
   border-radius: 5px;
   border: 1px solid #1d2540;
   margin: 10px 0px;
 }
 
 .contact-form input {
-  min-width: 100%;
   border-radius: 5px;
   border: 1px solid #1d2540;
   margin: 10px 0px;
 }
 
+
 .cta {
   background-color: #1d2540;
   color: #ede30e;
   border-radius: 5px;
+  min-width: 100%;
+  
 }
 
 .contact-map {
@@ -492,12 +514,31 @@ ul {
   margin-left: 0px;
 }
 
+.prompt {
+  margin-left: 37px;
+}
+
+.contact .req, .contact-area .req {
+  color: red;
+  margin: 0%;
+  padding-bottom: 4%;
+  display: none;
+}
+
+.contact .errorMsg {
+  color: red;
+}
+
+.contact .successMsg {
+  color: green;
+}
+
 /* Sign in ----------*/
 
 #checkbox {
   display: flex;
   flex-direction: row;
-  margin-left: -42%;
+  align-items: flex-end;
   background: none;
   border-color: #1d2540;
 }
@@ -523,13 +564,15 @@ ul {
 
 .remember {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  max-width: 25%;
 }
+
+
 
 /* Media queries -----------*/
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 500px) {
   .main {
     max-width: 100%;
     position: center;
@@ -583,6 +626,13 @@ ul {
 
   input {
     top: 16vh;
+  }
+
+  .cta {
+    min-width: 30%;
+    max-width: 31%;
+    min-height: 40px;
+    align-self: flex-end;
   }
 
   #hamburger-menu {
@@ -648,13 +698,18 @@ ul {
 
   .stats {
     background-size: auto;
-    background-position: -370px;
+    background-position: -520px;
     text-align: left;
     text-indent: 20px;
   }
+
+  .no-account a:hover, footer a:hover {
+    text-decoration: underline;
+  }
+  
 }
 
-@media only screen and (min-width: 900px) and (orientation: landscape) {
+@media only screen and (min-width: 800px) {
   main {
     padding: 60px;
     display: flex;
@@ -665,7 +720,7 @@ ul {
 
   main a,
   main p {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   .main .game-card {
@@ -739,8 +794,10 @@ ul {
 
   .contact,
   .checkout {
-    max-width: 700px;
+    min-width: 60%;
+    max-width: 65%;
     margin: 0px auto;
+    /*max-width: 700px;*/
   }
 
   .main {
@@ -760,4 +817,5 @@ ul {
     border-width: 3px;
     border-color: #1d2540;
   }
+
 }
