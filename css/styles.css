@@ -234,6 +234,14 @@ footer a,
 
 /* Games ----------*/
 
+.clickable {
+  background-color: white;
+}
+
+.clickable:hover {
+  background-color: #f2f2f2;
+}
+
 .games-list h1 {
   padding-top: 30%;
   padding-left: 37px;
@@ -530,7 +538,7 @@ ul {
 #checkbox {
   display: flex;
   flex-direction: row;
-  margin-left: -42%;
+  align-items: flex-end;
   background: none;
   border-color: #1d2540;
 }
@@ -556,8 +564,8 @@ ul {
 
 .remember {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  max-width: 25%;
 }
 
 
@@ -694,6 +702,10 @@ ul {
     text-align: left;
     text-indent: 20px;
   }
+
+  .no-account a:hover, footer a:hover {
+    text-decoration: underline;
+  }
   
 }
 
@@ -708,7 +720,7 @@ ul {
 
   main a,
   main p {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   .main .game-card {
@@ -783,7 +795,7 @@ ul {
   .contact,
   .checkout {
     min-width: 60%;
-    max-width: 65%;
+    /*max-width: 65%;*/
     margin: 0px auto;
     /*max-width: 700px;*/
   }
@@ -805,4 +817,6 @@ ul {
     border-width: 3px;
     border-color: #1d2540;
   }
+
+
 }
