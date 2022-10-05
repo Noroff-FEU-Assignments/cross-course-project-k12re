@@ -53,7 +53,6 @@ function submit(event) {
     event.preventDefault();
 
     if(checkInputs(firstName.value, 3) && checkInputs(lastName.value, 3) && checkInputs(cardNumber.value, 10) && checkInputs(cvc.value, 3) && checkInputs(expiry.value, 4)) {
-        
         window.location.href="../success.html"
     } else {
         prompt.innerHTML = `<div class="errorMsg">Please insert valid info</div>`;
