@@ -6,8 +6,6 @@ const emailReq = document.querySelector("#email-req");
 const prompt = document.querySelector(".prompt");
 
 
-
-
 function validateForm() {
 
     event.preventDefault();

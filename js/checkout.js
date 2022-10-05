@@ -44,14 +44,6 @@ function validateForm() {
     } else {
         expiryReq.style.display = "none"
     };
-
-
-
-    console.log(firstName.value.length);
-    console.log(lastName.value.length);
-    console.log(cardNumber.value.length);
-    console.log(cvc.value.length);
-    console.log(expiry.value.length);
     
 };
 
@@ -60,7 +52,9 @@ function submit(event) {
     event.preventDefault();
 
     if(checkInputs(firstName.value, 3) && checkInputs(lastName.value, 3) && checkInputs(cardNumber.value, 10) && checkInputs(cvc.value, 3) && checkInputs(expiry.value, 4)) {
-        message.innerHTML = `<div class="successMsg">Submission success</div>`;
+    
+        
+        //message.innerHTML = `<div class="successMsg">Submission success</div>`;
         contactForm.reset();
     } else {
         message.innerHTML = `<div class="errorMsg">Please insert valid info</div>`;
