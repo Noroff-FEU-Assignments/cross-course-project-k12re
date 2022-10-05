@@ -1,6 +1,6 @@
+const contactForm = document.querySelector(".contact-form");
 const email = document.querySelector(".email");
 const textArea = document.querySelector(".textarea");
-const contactForm = document.querySelector(".contact-form");
 const textAreaReq = document.querySelector("#textarea-req");
 const emailReq = document.querySelector("#email-req");
 const prompt = document.querySelector(".prompt");

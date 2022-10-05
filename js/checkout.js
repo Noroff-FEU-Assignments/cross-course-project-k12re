@@ -11,6 +11,7 @@ const cvcReq = document.querySelector("#cvc-req");
 const expiry = document.querySelector(".expiry");
 const expiryReq = document.querySelector("#expiry-req");
 
+
 function validateForm() {
 
     event.preventDefault();
@@ -52,9 +53,8 @@ function submit(event) {
     event.preventDefault();
 
     if(checkInputs(firstName.value, 3) && checkInputs(lastName.value, 3) && checkInputs(cardNumber.value, 10) && checkInputs(cvc.value, 3) && checkInputs(expiry.value, 4)) {
-    
         
-        //message.innerHTML = `<div class="successMsg">Submission success</div>`;
+        message.innerHTML = `<div class="successMsg">Submission success</div>`;
         contactForm.reset();
     } else {
         message.innerHTML = `<div class="errorMsg">Please insert valid info</div>`;
