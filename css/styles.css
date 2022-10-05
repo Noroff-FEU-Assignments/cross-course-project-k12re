@@ -635,6 +635,10 @@ ul {
     align-self: flex-end;
   }
 
+  .cta:hover {
+    cursor: pointer;
+  }
+
   #hamburger-menu {
     display: none;
   }
