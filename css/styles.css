@@ -255,6 +255,11 @@ footer a,
   flex-direction: row;
 }
 
+.game-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .game-card {
   max-width: 260px;
   margin: 0px auto;
