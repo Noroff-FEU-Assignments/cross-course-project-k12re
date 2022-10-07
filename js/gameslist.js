@@ -1,6 +1,6 @@
 const gamesList = document.querySelector(".game-cards");
 
-import games from "./gamesexport.js";
+import games from "../js/gamesexport.js";
 
 
 let html = "";
