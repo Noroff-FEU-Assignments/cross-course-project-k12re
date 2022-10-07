@@ -1,8 +1,8 @@
 const contactForm = document.querySelector(".contact-form");
 const email = document.querySelector(".email");
-const emailReq = document.querySelector("#email-req")
+const emailReq = document.querySelector("#email-req");
 const password = document.querySelector(".password");
-const passwordReq = document.querySelector("#password-req")
+const passwordReq = document.querySelector("#password-req");
 
 
 function validateForm() {
@@ -26,35 +26,16 @@ function validateForm() {
 };
 
 
-function checkMail(email) {
-
-    const regEx = /\S+@\S+\.\S+/;
-    const mailPattern = regEx.test(email);
-    return mailPattern;
-};
-
-
 function submit(event) {
 
     event.preventDefault();
 
     if(checkInputs(password.value, 8) && checkInputs(email.value, true)) {
-        window.location.href="../index.html"
+        window.location.href="../index.html";
     } else {
         prompt.innerHTML = `<div class="errorMsg">Please insert valid info</div>`;
     };
-}
-
-
-function checkInputs(value, length) {
-
-    if (value.length >= length) {
-        return true;
-    } else {
-        return false;
-    }
 };
-
 
 
 contactForm.addEventListener("submit", validateForm);

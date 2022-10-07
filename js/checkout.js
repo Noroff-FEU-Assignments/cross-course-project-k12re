@@ -60,14 +60,5 @@ function submit(event) {
 }
 
 
-function checkInputs(value, length) {
-
-    if (value.length >= length) {
-        return true;
-    } else {
-        return false;
-    }
-};
-
 contactForm.addEventListener("submit", validateForm);
 contactForm.addEventListener("submit", submit);

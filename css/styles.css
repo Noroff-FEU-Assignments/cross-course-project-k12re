@@ -572,7 +572,7 @@ ul {
 
 /* Media queries -----------*/
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 600px) {
   .main {
     max-width: 100%;
     position: center;

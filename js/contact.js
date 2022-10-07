@@ -27,14 +27,6 @@ function validateForm() {
 };
 
 
-function checkMail(email) {
-
-    const regEx = /\S+@\S+\.\S+/;
-    const mailPattern = regEx.test(email);
-    return mailPattern;
-};
-
-
 function submit(event) {
 
     event.preventDefault();
@@ -45,18 +37,7 @@ function submit(event) {
     } else {
         prompt.innerHTML = `<div class="errorMsg">Please insert valid info</div>`;
     };
-}
-
-
-function checkInputs(value, length) {
-
-    if (value.length >= length) {
-        return true;
-    } else {
-        return false;
-    }
 };
-
 
 
 contactForm.addEventListener("submit", validateForm);
