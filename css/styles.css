@@ -27,6 +27,14 @@ h2 {
   font-weight: 700;
 }
 
+.price {
+  background-color: #ede30e;
+  color: #1d2540;
+  font-weight: 200;
+  padding: 0px 15px;
+  margin: 0px 15px;
+}
+
 h3 {
   font-size: 20px;
   font-weight: 300;
@@ -355,8 +363,6 @@ a:active {
 }
 
 .price {
-  /*background-color: #ede30e;*/
-  color: #1d2540;
   grid-column: 2;
   border-radius: 24px;
   text-align: end;
