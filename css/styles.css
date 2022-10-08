@@ -32,7 +32,7 @@ h2 {
   color: #1d2540;
   font-weight: 200;
   padding: 0px 15px;
-  margin: 0px 15px;
+  margin: 30px 15px;
 }
 
 h3 {
@@ -287,8 +287,13 @@ footer a,
   grid-area: 2;
 }
 
-.game-card a {
+
+/*.game-card a {
   grid-area: auto;
+}*/
+
+.game-card p, .game-card h2 {
+  padding: 8px;
 }
 
 .tags ul {
@@ -504,12 +509,25 @@ ul {
 }
 
 
-.cta {
+.cta, .cta-a {
   background-color: #1d2540;
   color: #ede30e;
   border-radius: 5px;
-  min-width: 100%;
-  
+  max-width: 100%;
+  font-size: 1.8em;
+
+}
+
+#cta-cancel {
+  background-color: darkred;
+  color: #ede30e;
+  border: none;
+  border-radius: 4px;
+  position: relative;
+  top: 9%;
+  left: 79%;
+  cursor: pointer;
+
 }
 
 .contact-map {
@@ -583,10 +601,10 @@ ul {
 
 /* Media queries -----------*/
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 650px) {
   .main {
-    max-width: 100%;
-    position: center;
+    max-width: 1920px;
+    margin: 0px auto;
     padding: 60px;
     display: flex;
     flex-direction: column;
@@ -630,7 +648,7 @@ ul {
   }
 
   li a {
-    font-size: 1.2em;
+    font-size: 1em;
     position: relative;
     top: 0px;
   }
@@ -639,14 +657,14 @@ ul {
     top: 16vh;
   }
 
-  .cta {
-    min-width: 30%;
-    max-width: 40%;
+  .cta, .cta-a {
+    /*min-width: 100%;
+    /*max-width: 40%;*/
     min-height: 40px;
-    align-self: flex-end;
+    /*align-self: stretch;*/
   }
 
-  .cta:hover {
+  .cta:hover, .cta-a:hover {
     cursor: pointer;
   }
 
@@ -726,11 +744,11 @@ ul {
 
 @media only screen and (min-width: 800px) {
   main {
+    max-width: 1920px;
+    margin: 0px auto;
     padding: 60px;
     display: flex;
     flex-direction: column;
-    max-width: 100%;
-    align-self: center;
   }
 
   main a,
@@ -819,13 +837,13 @@ ul {
     flex-direction: row;
   }
 
-  .cta,
+  .cta,.cta-a ,
   a {
     transition-property: background;
     transition-duration: 0.1s;
   }
 
-  .cta:hover,
+  .cta:hover, .cta-a:hover,
   a:hover {
     background: #ede30e;
     color: #1d2540;

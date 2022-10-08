@@ -39,6 +39,7 @@
             <li><a href="play.html">Play</a></li>
             <li><a href="account.html">Account</a></li>
             <li><a href="sign-in.html">Login</a></li>
+            <li><a href="checkout.html" class="current item-in-cart">Cart</a></li>
           </ul>
         </nav>
       </section>
@@ -47,11 +48,12 @@
       <section class="checkout">
         <h1>Checkout</h1>
         <div class="checkout-game-card">
-          <img class="checkout-game" src="images/header-game.png" alt="Space War" />
+          <div class="cancel"></div>
+          <!--<img class="checkout-game" src="images/header-game.png" alt="Space War" />
           <p><strong>Space Wars.</strong> Embark on an epic adventure in this time consuming adventure. You're life as you know it is over.</p>
           <p>Preorder</p>
           <p class="price">Price <strong>499,-</strong></p>
-        </div>
+        </div>-->
       </section>
       <section class="contact">
         <div class="prompt"></div>
@@ -72,7 +74,6 @@
           <input class="expiry" type="date" />
           <div class="req" id="expiry-req">Must be date</div>
           <input type="submit" value="Purchase" class="cta" />
-          <!--<button href="success.html" class="cta">Purchase</button>-->
         </form>
       </section>
     </main>
@@ -80,7 +81,8 @@
       <h3>&copy; Ken Thore Bøeng</h3>
       <a href="contact.html"> Contact Us </a>
     </footer>
+    <script src="js/gamestore.js" type="module"></script>
     <script src="js/checkinputs.js"></script>
-    <script src="js/checkout.js"></script>
+    <script src="js/checkout.js" type="module"></script>
   </body>
 </html>

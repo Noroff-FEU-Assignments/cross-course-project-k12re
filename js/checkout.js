@@ -1,3 +1,5 @@
+//import games from "../js/gamesexport.js";
+
 const contactForm = document.querySelector(".contact-form");
 const message = document.querySelector(".prompt");
 const firstName = document.querySelector(".firstname");
@@ -10,6 +12,31 @@ const cvc = document.querySelector(".cvc");
 const cvcReq = document.querySelector("#cvc-req");
 const expiry = document.querySelector(".expiry");
 const expiryReq = document.querySelector("#expiry-req");
+const checkoutGameCard = document.querySelector(".checkout-game-card");
+const cancel = document.querySelector(".cancel");
+const addToCart = document.querySelector(".cta-a")
+
+
+const fetchedGame = localStorage.getItem("games");
+const parsedGame = JSON.parse(fetchedGame)
+
+if(!parsedGame) {
+    checkoutGameCard.innerHTML = "No games in cart"
+} else {
+    checkoutGameCard.innerHTML += `<div class="checkout-game" id="${parsedGame.id}">
+                                    <input id="cta-cancel" type="submit" value="X"/>
+                                    <img class="game gameImg" src="${parsedGame.img}" alt="${parsedGame.gameName}"/>
+                                    <h2 class="gameName">${parsedGame.gameName}</h2>
+                                    <p class="gameDescription">${parsedGame.description}</p>
+                                    </div>`;
+}
+
+
+
+function cancelCta() {
+    checkoutGameCard.innerHTML += "";
+    //document.localStorage.removeItem("games");
+};
 
 
 function validateForm() {
@@ -62,3 +89,4 @@ function submit(event) {
 
 contactForm.addEventListener("submit", validateForm);
 contactForm.addEventListener("submit", submit);
+cancel.addEventListener("submit", cancelCta());

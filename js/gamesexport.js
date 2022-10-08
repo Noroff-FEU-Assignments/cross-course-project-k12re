@@ -5,7 +5,7 @@ const games = [
         id: "0",
         img: "images/header-game.png",
         gameName: "Space War",
-        description: "Embark on an epic adventure in this time consuming adventure."
+        description: "Embark on an epic time consuming adventure."
     },
     {
         id: "1",
