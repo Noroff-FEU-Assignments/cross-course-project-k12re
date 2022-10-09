@@ -600,7 +600,7 @@ ul {
 
 /* Media queries -----------*/
 
-@media only screen and (min-width: 680px) {
+@media only screen and (min-width: 720px) {
   .main {
     max-width: 1920px;
     margin: 0px auto;
@@ -647,7 +647,7 @@ ul {
   }
 
   li a {
-    font-size: 0.7em;
+    font-size: 0.8em;
     position: relative;
     top: 0px;
   }
