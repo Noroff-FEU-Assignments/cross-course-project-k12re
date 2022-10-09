@@ -4,7 +4,6 @@ const emailReq = document.querySelector("#email-req");
 const password = document.querySelector(".password");
 const passwordReq = document.querySelector("#password-req");
 
-
 function validateForm() {
 
     event.preventDefault();
@@ -25,7 +24,6 @@ function validateForm() {
     console.log(email.value);
 };
 
-
 function submit(event) {
 
     event.preventDefault();
@@ -36,7 +34,6 @@ function submit(event) {
         prompt.innerHTML = `<div class="errorMsg">Please insert valid info</div>`;
     };
 };
-
 
 contactForm.addEventListener("submit", validateForm);
 contactForm.addEventListener("submit", submit);

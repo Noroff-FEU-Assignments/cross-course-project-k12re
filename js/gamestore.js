@@ -7,4 +7,3 @@ function purchase() {
 };
 
 addToCart.addEventListener("submit", purchase());
-

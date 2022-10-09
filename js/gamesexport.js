@@ -1,5 +1,3 @@
-
-
 const games = [
     {
         id: "0",
