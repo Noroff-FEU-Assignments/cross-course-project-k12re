@@ -87,6 +87,7 @@ main a {
   padding-left: 30%;
   padding-right: 30%;
   position: fixed;
+  z-index: 900;
   background-color: #f2f2f2;
 }
 
@@ -99,6 +100,7 @@ nav {
   flex: 1;
   flex-direction: row;
   position: fixed;
+  z-index: 800;
   min-height: 110px;
   max-width: 100%;
 }
