@@ -22,7 +22,7 @@ function createHTML(games) {
     <img class="game gameImg" src="${results.images[0].src}" alt="${results.name}"/>
     <h2 class="gameName">${results.name}</h2>
     <p class="gameDescription">${results.description}</p>
-    <a href="play.html"> Read more </a>
+    <a href="play.html?id=${results.id}"> Read more </a>
     </a>
   </div>`
   }
