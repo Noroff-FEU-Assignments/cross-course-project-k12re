@@ -18,13 +18,13 @@ fetchGames();
 function createHTML(games) {
   games.forEach(results => {
     gamesList.innerHTML += `<div class="game-card" id="${results.id}">
-    <a class="clickable" href="play.html?id=${results.id}">
-    <img class="game gameImg" src="${results.images[0].src}" alt="${results.name}"/>
-    <h2 class="gameName">${results.name}</h2>
-    <p class="gameDescription">${results.description}</p>
-    <a href="play.html?id=${results.id}"> Read more </a>
-    </a>
-  </div>`
+                              <a class="clickable" href="play.html?id=${results.id}">
+                                <img class="game gameImg" src="${results.images[0].src}" alt="${results.name}"/>
+                                <h2 class="gameName">${results.name}</h2>
+                                <p class="gameDescription">${results.description}</p>
+                                <a href="play.html?id=${results.id}"> Read more </a>
+                              </a>
+                            </div>`
   }
   );
 }

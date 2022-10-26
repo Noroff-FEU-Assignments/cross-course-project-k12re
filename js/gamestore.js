@@ -17,22 +17,22 @@ function purchase() {
 };
 
 async function fetchGame() {
-    try {
-      const response = await fetch(newUrl);
-      const results = await response.json();
+  try {
+    const response = await fetch(newUrl);
+    const results = await response.json();
       
-      console.log(results);
-      //createHTML(results);
+    console.log(results);
+    //createHTML(results);
       
-      gameContainer.innerHTML = "";
+    gameContainer.innerHTML = "";
 
-      gameContainer.innerHTML += `<div class="game-card" id="${results.id}">
-                                <a class="clickable" href="play.html">
-                                <img class="game gameImg" src="${results.images[0].src}" alt="${results.name}"/>
-                                <h2 class="gameName">${results.name}</h2>
-                                <p class="gameDescription">${results.description}</p>
-                                <a href="checkout.html?id=${results.id}"> Add to cart </a>
-                                </a>
+    gameContainer.innerHTML += `<div class="game-card" id="${results.id}">
+                                  <a class="clickable" href="play.html">
+                                    <img class="game gameImg" src="${results.images[0].src}" alt="${results.name}"/>
+                                    <h2 class="gameName">${results.name}</h2>
+                                    <p class="gameDescription">${results.description}</p>
+                                    <a href="checkout.html?id=${results.id}"> Add to cart </a>
+                                  </a>
                                 </div>`;
       
     }
