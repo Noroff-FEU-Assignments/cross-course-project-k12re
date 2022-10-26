@@ -12,7 +12,7 @@ const expiry = document.querySelector(".expiry");
 const expiryReq = document.querySelector("#expiry-req");
 const checkoutGameCard = document.querySelector(".checkout-game-card");
 
-const fetchedGame = localStorage.getItem("games");
+const fetchedGame = localStorage.getItem("game");
 const parsedGame = JSON.parse(fetchedGame);
 
 if(!parsedGame) {

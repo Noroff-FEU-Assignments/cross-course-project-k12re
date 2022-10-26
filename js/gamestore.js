@@ -12,9 +12,7 @@ console.log(id)
 
 const addToCart = document.querySelector(".cta-a");
 
-function purchase() {
-    localStorage.setItem("games", JSON.stringify(games[0]));
-};
+
 
 async function fetchGame() {
   try {
@@ -31,7 +29,7 @@ async function fetchGame() {
                                     <img class="game gameImg" src="${results.images[0].src}" alt="${results.name}"/>
                                     <h2 class="gameName">${results.name}</h2>
                                     <p class="gameDescription">${results.description}</p>
-                                    <a href="checkout.html?id=${results.id}"> Add to cart </a>
+                                    <a class="cta-a" href="checkout.html?id=${results.id}"> Add to cart </a>
                                   </a>
                                 </div>`;
       
@@ -46,6 +44,9 @@ async function fetchGame() {
 
 fetchGame();
 
+function purchase() {
+    localStorage.setItem("game", JSON.stringify(gameContainer));
+};
 
 //function createHTML(gameContainer) {
       
