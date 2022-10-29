@@ -48,20 +48,6 @@ function purchase() {
       
 //      };
   
-//  let html = "";
-  
-//  gameContainer.innerHTML = html;
 
-
-//let html = "";
-
-//html.innerHTML += `<div class="game-card" id="${results.id}">
- //       <a class="clickable" href="play.html">
- //       <img class="game gameImg" src="${results.images}" alt="${results.name}"/>
- //       <h2 class="gameName">${results.name}</h2>
- //       <p class="gameDescription">${results.description}</p>
- //       <a href="play.html"> Read more </a>
- //       </a>
- //       </div>`;
 
 addToCart.addEventListener("submit", purchase());
