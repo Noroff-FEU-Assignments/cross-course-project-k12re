@@ -12,8 +12,6 @@ console.log(id)
 
 const addToCart = document.querySelector(".cta-a");
 
-
-
 async function fetchGame() {
   try {
     const response = await fetch(newUrl);
@@ -38,9 +36,7 @@ async function fetchGame() {
       console.log(error);
     }
 
-    
   };
-
 
 fetchGame();
 
@@ -67,7 +63,5 @@ function purchase() {
  //       <a href="play.html"> Read more </a>
  //       </a>
  //       </div>`;
-
-
 
 addToCart.addEventListener("submit", purchase());
