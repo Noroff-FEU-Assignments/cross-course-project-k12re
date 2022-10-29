@@ -1,0 +1,1 @@
+const newGames = document.querySelector("")

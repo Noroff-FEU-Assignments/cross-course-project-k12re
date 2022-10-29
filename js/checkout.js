@@ -25,11 +25,12 @@ if(!parsedGame) {
                                     <p class="gameDescription">${parsedGame.description}</p>
                                     </div>`;
 };
+//Cart not working as I only get empty array in localstorage from gamestore.js
 
 const cancel = document.querySelector("#cta-cancel");
 
 function cancelCta() {
-    localStorage.removeItem("games");
+    localStorage.clear("game");
     checkoutGameCard.innerHTML = "";
 };
 
