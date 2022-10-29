@@ -6,19 +6,12 @@ let id = parseInt(param.get("id"));
 
 const newUrl = `https://gamehub.kenthore.no/wp-json/wc/store/products/` + id;
 
-console.log(id)
-
-//import games from "./gamesexport.js";
-
 const addToCart = document.querySelector(".cta-a");
 
 async function fetchGame() {
   try {
     const response = await fetch(newUrl);
     const results = await response.json();
-      
-    console.log(results);
-    //createHTML(results);
       
     gameContainer.innerHTML = "";
 
@@ -43,11 +36,5 @@ fetchGame();
 function purchase() {
     localStorage.setItem("game", JSON.stringify(gameContainer));
 };
-
-//function createHTML(gameContainer) {
-      
-//      };
-  
-
 
 addToCart.addEventListener("submit", purchase());
