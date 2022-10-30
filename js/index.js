@@ -20,12 +20,14 @@ async function callAPI() {
     for (let i = 0; i < 3; i++) {
       newGames.innerHTML += `<div class="featured-game" id="${results[i].id}">
                               <img class="game gameImg cover-small_img" src="${results[i].images[0].src}" alt="${results[i].name}"/>
+                              <a href="play.html?id=${results[i].id}"> Read more </a>
                             </div>`;
     }
 
     for (let i = 3; i < 6; i++) {
       usedGames.innerHTML += `<div class="featured-game" id="${results[i].id}">
                                 <img class="game gameImg cover-small_img" src="${results[i].images[0].src}" alt="${results[i].name}"/>
+                                <a href="play.html?id=${results[i].id}"> Read more </a>
                               </div>`;
     }
   }
