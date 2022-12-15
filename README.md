@@ -1,8 +1,11 @@
-# cross-course-project-k12re
-cross-course-project-k12re created by GitHub Classroom
+### Gamehub - Cross course project
 
-Gamehub
+<picture>
+    <img alt="Screenshot of the frontpage" src="images/gamehub.screen.jpg">
+</picture>
 
-This is my webpage based on the design made in the design course
+---
 
-Made by Ken Thore Bøeng
+The project was to design, and ultimately create the webpage we designed using html, css, and later javascript
+
+## Description
