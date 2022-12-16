@@ -10,6 +10,7 @@ The project was to design, and ultimately create the webpage we designed using h
 
 The site is about gaming, and is a hub for buying and selling games. 
 The site has a home screen, games list page, details page and a login and contact page.
+The site also has a cart, non-functional.
 
 - Responsive
 - WCAG
