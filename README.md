@@ -1,8 +1,6 @@
 ### Gamehub - Cross course project
 
-
-    [Screenshot of the frontpage](images/gamehub.screen.png)
-
+[Screenshot of the frontpage](images/gamehub.screen.png)
 
 ---
 
