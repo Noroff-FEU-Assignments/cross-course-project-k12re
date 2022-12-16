@@ -1,7 +1,7 @@
 ### Gamehub - Cross course project
 
 <picture>
-    <img alt="Screenshot of the frontpage" src="images/gamehub.screen.png">
+    [Screenshot of the frontpage] (images/gamehub.screen.png)
 </picture>
 
 ---
