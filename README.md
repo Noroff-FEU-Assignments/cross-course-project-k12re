@@ -26,4 +26,4 @@ It hould also have a contact page and an account page.
 
 ## Contact
 
-[Linkedin](https://www.linkedin.com/in/ken-thore-bøeng-b2b1b3ba/)
+- [Linkedin](https://www.linkedin.com/in/ken-thore-bøeng-b2b1b3ba/)
