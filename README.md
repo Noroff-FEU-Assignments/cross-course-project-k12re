@@ -1,8 +1,8 @@
 ### Gamehub - Cross course project
 
-<picture>
+
     [Screenshot of the frontpage](images/gamehub.screen.png)
-</picture>
+
 
 ---
 
@@ -25,4 +25,4 @@ The site has a home screen, games list page, details page and a login and contac
 - Javascript
 
 ## Contact
-[Linkedin](https://www.linkedin.com/in/ken-thore-bøeng-b2b1b3ba/)
+- [Linkedin](https://www.linkedin.com/in/ken-thore-bøeng-b2b1b3ba/)
