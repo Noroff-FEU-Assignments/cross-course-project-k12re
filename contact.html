@@ -7,7 +7,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap" rel="stylesheet" />
-
     <link href="css/styles.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/1330ccaa0c.js" crossorigin="anonymous"></script>
     <title>Gamehub - Contact</title>
@@ -35,6 +34,7 @@
             <li><a href="play.html">Play</a></li>
             <li><a href="account.html">Account</a></li>
             <li><a href="sign-in.html">Login</a></li>
+            <li><a href="checkout.html" class="item-in-cart">Cart</a></li>
           </ul>
         </nav>
         <label for="search-bar"><i class="fas fa-search"></i></label>
@@ -45,13 +45,16 @@
     <main class="contact">
       <h1>Contact Us</h1>
       <p>Please fill out form...</p>
-      <section class="contact">
-        <form method="POST" class="contact-form">
-          <label for="email">Email</label>
-          <input type="email" />
-          <label for="textarea">Message</label>
-          <textarea label="Message"></textarea>
-          <input type="submit" class="cta" />
+      <div class="prompt"></div>
+      <section class="contact-area">
+        <form action="contact.html" method="GET" class="contact-form">
+          <label for="email">Email (Required)</label>
+          <input class="email" type="email" />
+          <div class="req" id="email-req">Must be a valid email</div>
+          <label for="textarea">Message (Required)</label>
+          <textarea class="textarea" label="Message"></textarea>
+          <div class="req" id="textarea-req">Minimum 25 characters</div>
+          <input type="submit" value="Send mail" class="cta"/>
         </form>
       </section>
       <section class="map">
@@ -74,5 +77,8 @@
         <h3>&copy; Ken Thore Bøeng</h3>
         <a href="contact.html"> Contact Us </a>
       </footer>
+      <script src="js/checkinputs.js"></script>
+      <script src="js/checkmail.js"></script>
+      <script src="js/contact.js"></script>
   </body>
 </html>

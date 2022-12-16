@@ -27,6 +27,14 @@ h2 {
   font-weight: 700;
 }
 
+.price {
+  background-color: #ede30e;
+  color: #1d2540;
+  font-weight: 200;
+  padding: 0px 15px;
+  margin: 30px 15px;
+}
+
 h3 {
   font-size: 20px;
   font-weight: 300;
@@ -79,6 +87,7 @@ main a {
   padding-left: 30%;
   padding-right: 30%;
   position: fixed;
+  z-index: 900;
   background-color: #f2f2f2;
 }
 
@@ -91,6 +100,7 @@ nav {
   flex: 1;
   flex-direction: row;
   position: fixed;
+  z-index: 800;
   min-height: 110px;
   max-width: 100%;
 }
@@ -234,6 +244,14 @@ footer a,
 
 /* Games ----------*/
 
+.clickable {
+  background-color: white;
+}
+
+.clickable:hover {
+  background-color: #f2f2f2;
+}
+
 .games-list h1 {
   padding-top: 30%;
   padding-left: 37px;
@@ -245,6 +263,11 @@ footer a,
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+}
+
+.game-cards {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .game-card {
@@ -266,8 +289,13 @@ footer a,
   grid-area: 2;
 }
 
-.game-card a {
+
+/*.game-card a {
   grid-area: auto;
+}*/
+
+.game-card p, .game-card h2 {
+  padding: 8px;
 }
 
 .tags ul {
@@ -316,13 +344,18 @@ a:active {
 
 /* Checkout ----------*/
 
+.expiry, .cvc {
+  max-width: 20%;
+}
+
 .checkout h1 {
   padding-top: 30%;
   padding-left: 37px;
 }
 
 .checkout-game-card {
-  max-width: 100%;
+  min-width: 50%;
+  max-width: 80%;
   display: grid;
   padding: 37px;
   gap: 10px;
@@ -333,12 +366,10 @@ a:active {
 }
 
 .checkout-game {
-  max-width: 100px;
+  max-width: 120px;
 }
 
 .price {
-  background-color: #ede30e;
-  color: #1d2540;
   grid-column: 2;
   border-radius: 24px;
   text-align: end;
@@ -379,7 +410,8 @@ a:active {
   background-image: url(/images/controller_img.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: -300px;
+  background-position: -360px;
+  background-color: #ffe002;
   min-height: 465px;
   max-width: 100%;
   margin: 37px;
@@ -427,6 +459,11 @@ ul {
 }
 
 /* Contact ---------- */
+.contact {
+  display: flex;
+  flex-direction: column;
+  
+}
 
 .contact h1 {
   padding-top: 30%;
@@ -450,6 +487,7 @@ ul {
 
 .contact-form {
   background-color: #ede30e;
+  display: flex;
   flex-direction: column;
   max-width: 100%;
   min-height: 465px;
@@ -460,23 +498,37 @@ ul {
 
 .contact-form textarea {
   min-height: 320px;
-  min-width: 100%;
+  /*min-width: 100%;*/
   border-radius: 5px;
   border: 1px solid #1d2540;
   margin: 10px 0px;
 }
 
 .contact-form input {
-  min-width: 100%;
   border-radius: 5px;
   border: 1px solid #1d2540;
   margin: 10px 0px;
 }
 
-.cta {
+
+.cta, .cta-a {
   background-color: #1d2540;
   color: #ede30e;
   border-radius: 5px;
+  max-width: 100%;
+  font-size: 1.8em;
+
+}
+
+#cta-cancel {
+  background-color: darkred;
+  color: #ede30e;
+  border: none;
+  position: relative;
+  top: 40px;
+  left: 79%;
+  cursor: pointer;
+
 }
 
 .contact-map {
@@ -492,12 +544,31 @@ ul {
   margin-left: 0px;
 }
 
+.prompt {
+  margin-left: 37px;
+}
+
+.contact .req, .contact-area .req {
+  color: red;
+  margin: 0%;
+  padding-bottom: 4%;
+  display: none;
+}
+
+.contact .errorMsg {
+  color: red;
+}
+
+.contact .successMsg {
+  color: green;
+}
+
 /* Sign in ----------*/
 
 #checkbox {
   display: flex;
   flex-direction: row;
-  margin-left: -42%;
+  align-items: flex-end;
   background: none;
   border-color: #1d2540;
 }
@@ -523,16 +594,18 @@ ul {
 
 .remember {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  max-width: 25%;
 }
+
+
 
 /* Media queries -----------*/
 
-@media only screen and (min-width: 480px) {
+@media only screen and (min-width: 720px) {
   .main {
-    max-width: 100%;
-    position: center;
+    max-width: 1920px;
+    margin: 0px auto;
     padding: 60px;
     display: flex;
     flex-direction: column;
@@ -576,13 +649,21 @@ ul {
   }
 
   li a {
-    font-size: 1.2em;
+    font-size: 0.8em;
     position: relative;
     top: 0px;
   }
 
   input {
     top: 16vh;
+  }
+
+  .cta, .cta-a {
+    min-height: 40px;
+  }
+
+  .cta:hover, .cta-a:hover {
+    cursor: pointer;
   }
 
   #hamburger-menu {
@@ -648,30 +729,39 @@ ul {
 
   .stats {
     background-size: auto;
-    background-position: -370px;
+    background-position: -520px;
     text-align: left;
     text-indent: 20px;
   }
+
+  .no-account a:hover, footer a:hover {
+    text-decoration: underline;
+  }
+  
 }
 
-@media only screen and (min-width: 900px) and (orientation: landscape) {
+@media only screen and (min-width: 900px) {
   main {
+    max-width: 1920px;
+    margin: 0px auto;
     padding: 60px;
     display: flex;
     flex-direction: column;
-    max-width: 100%;
-    align-self: center;
   }
 
   main a,
   main p {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 
   .main .game-card {
     background-color: #f2f2f2;
     padding: 0px;
     justify-content: space-between;
+  }
+
+  .game-page .game-card {
+    max-width: 500px;
   }
 
   .header-news h1 {
@@ -739,25 +829,28 @@ ul {
 
   .contact,
   .checkout {
-    max-width: 700px;
+    min-width: 60%;
+    max-width: 65%;
     margin: 0px auto;
+    /*max-width: 700px;*/
   }
 
   .main {
     flex-direction: row;
   }
 
-  .cta,
+  .cta,.cta-a ,
   a {
     transition-property: background;
     transition-duration: 0.1s;
   }
 
-  .cta:hover,
+  .cta:hover, .cta-a:hover,
   a:hover {
     background: #ede30e;
     color: #1d2540;
     border-width: 3px;
     border-color: #1d2540;
   }
+
 }

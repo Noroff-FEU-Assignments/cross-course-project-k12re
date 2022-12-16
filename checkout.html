@@ -28,7 +28,6 @@
         <a href="index.html"><img class="logo" src="images/logo.png" alt="Game Hub" /></a>
         <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
         <input type="checkbox" id="hamburger-menu" />
-
         <label for="search-bar"><i class="fas fa-search"></i></label>
         <input type="checkbox" id="search-bar" />
         <input type="search" id="search-field" />
@@ -36,9 +35,10 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="games.html">Games</a></li>
-            <li><a href="play.html">Play</a></li>
+            <li><a href="games.html">Play</a></li>
             <li><a href="account.html">Account</a></li>
             <li><a href="sign-in.html">Login</a></li>
+            <li><a href="checkout.html" class="current item-in-cart">Cart</a></li>
           </ul>
         </nav>
       </section>
@@ -47,24 +47,26 @@
       <section class="checkout">
         <h1>Checkout</h1>
         <div class="checkout-game-card">
-          <img class="checkout-game" src="images/header-game.png" alt="Space War" />
-          <p><strong>Space Wars.</strong> Embark on an epic adventure in this time consuming adventure. You're life as you know it is over.</p>
-          <p>Preorder</p>
-          <p class="price">Price <strong>499,-</strong></p>
         </div>
       </section>
       <section class="contact">
+        <div class="prompt"></div>
         <form action="success.html" method="GET" class="contact-form">
           <label for="text">First Name</label>
-          <input type="text" />
+          <input class="firstname" type="text" />
+          <div class="req" id="firstname-req">Minimum 3 characters</div>
           <label for="text">Last Name</label>
-          <input type="text" />
+          <input class="lastname" type="text" />
+          <div class="req" id="lastname-req">Minimum 3 characters</div>
           <label for="number">Credit card number</label>
-          <input type="number" />
+          <input class="cardnumber" type="number" />
+          <div class="req" id="cardnumber-req">Must contain 10 numbers</div>
           <label for="number">CVC number</label>
-          <input type="number" />
+          <input class="cvc" type="number" />
+          <div class="req" id="cvc-req">Must contain 3 numbers</div>
           <label for="number">Expiry date</label>
-          <input type="number" />
+          <input class="expiry" type="date" />
+          <div class="req" id="expiry-req">Must be date</div>
           <input type="submit" value="Purchase" class="cta" />
         </form>
       </section>
@@ -73,5 +75,7 @@
       <h3>&copy; Ken Thore Bøeng</h3>
       <a href="contact.html"> Contact Us </a>
     </footer>
+    <script src="js/checkinputs.js"></script>
+    <script src="js/checkout.js" type="module"></script>
   </body>
 </html>
